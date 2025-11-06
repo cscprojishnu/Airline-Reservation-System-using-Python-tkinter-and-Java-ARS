@@ -13,10 +13,10 @@ DB_CONFIG = {
 }
 
 # Twilio configuration (should be moved to environment variables in production)
-TWILIO_ACCOUNT_SID = 'AC03a890af7b2f90b04e9926cd04c96ba5'
-TWILIO_AUTH_TOKEN = 'a033c77785aee40e70c10e2f1b208556'
-TWILIO_PHONE_NUMBER = '+13802674835'
-RECIPIENT_PHONE = '+917397468974'
+TWILIO_ACCOUNT_SID = 
+TWILIO_AUTH_TOKEN = 
+TWILIO_PHONE_NUMBER =
+RECIPIENT_PHONE =
 
 def get_db_connection():
     return mysql.connector.connect(**DB_CONFIG)
@@ -786,4 +786,5 @@ if __name__ == "__main__":
     style.configure('TLabelframe.Label', background='#f0f8ff')
     
     app = AirlineSeatReservation(root)
+
     root.mainloop()
